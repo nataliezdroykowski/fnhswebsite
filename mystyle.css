@@ -1,0 +1,538 @@
+body {
+    margin:0; 
+    font-family:montserrat ; 
+    padding: 0;
+    overflow-x:hidden; 
+    background-color: white;
+    top:0;
+}
+
+.navigationbar {
+    overflow-y: visible;
+    background-color: rgb(42, 42, 113);
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+    width: 100%;
+    padding: 0;
+}
+
+.title {
+    margin-top: 25px;
+    color: aliceblue;
+}
+
+.subtext {
+    color: aliceblue;
+    font-weight: normal;
+}
+.navigationbar a {
+    text-decoration: none;
+}
+
+.menuoption :hover{
+    color: grey
+} 
+
+.menutext {
+    color:rgb(240, 248, 255);
+
+}
+
+button {
+    font-family: montserrat;
+    text-decoration: none;
+    background-color: rgb(42, 42, 113);
+    border-color: transparent;
+    color:rgb(240, 248, 255)
+
+}
+
+.menu {
+    margin-top: 1px;
+    padding: 0%;
+    list-style: none;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.menuoption {
+    display: inline-block;
+    justify-content: space-evenly;
+    background-color: rgb(42, 42, 113);
+}
+
+.box a {
+    color: aliceblue;
+}
+
+.pointsbutton {
+    color: aliceblue;
+    font-family: montserrat;
+    background-color: black;
+    font-size: 95%;
+    border: 1px solid black;
+    font-weight: normal;
+}
+
+.pointsdiv {
+    max-width: 300px;
+}
+
+.pointsdiv :hover {
+    color: black;
+    background-color: white;
+}
+
+
+.footer {
+    overflow: hidden;
+    bottom: 0;
+    max-width: 100%;
+    text-align: center;
+    background-color: rgb(240, 242, 243);
+    font-size: small;
+}
+
+.footericons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footericons li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+/* index css*/
+
+
+#slider a {
+    position: absolute; 
+}
+
+#slider a img{
+    padding: 2%;
+}
+
+#slider a:nth-of-type(1) {
+    animation-name:fader;
+    animation-delay: 7s;
+    animation-duration: 2s;
+    z-index:20;
+}
+
+#slider a:nth-of-type(2) {
+    z-index:10;
+    position: relative
+}
+
+#slider a:nth-of-type(n+3) {
+    display:none;
+}
+
+@keyframes fader {
+    0% {opacity: 1;}
+    100% {opacity: 0;} 
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    background-color: rgb(70, 74, 77);
+    color: aliceblue;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 96%;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+/* index.html */
+
+.description {
+    margin: 3%;
+}
+.clubinfo {
+    margin: 3%;
+}
+.officers {
+    margin: 3%;
+}
+
+
+.pointvalues {
+    margin-top: 1%;
+    margin: 2%;
+    margin-left: auto;
+    order: 2;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+.letteringrequirements {
+    margin-top: 1%;
+    margin: 2%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+
+@font-face {
+    font-family: "montserrat";
+    src: url(Montserrat-VariableFont_wght.ttf)
+}
+
+@media only screen and (max-width: 699px) {
+    h1 {
+        font-size: 14px;
+    }
+    
+    h3 {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 10px
+    }
+
+    h4 {
+        font-size: 8px;
+    }
+
+    h5 {
+        font-size: 6px;
+    }
+
+    h6 {
+        font-size: 4px;
+    }
+
+    p { font-size: 8px;}
+
+    li { font-size: 8px}
+
+    td {
+        padding: 5px;
+        text-align: center;
+        font-size: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    th {
+        padding: 5px;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .main {
+        margin: 5px;
+    }
+
+    .navigationbar {
+        align-items: center;
+        padding-bottom: 1%;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .navigationbar a {
+        font-size: smaller;
+    }
+
+    .navimageweb {
+        display: none;
+    }
+
+    .navlogo {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .navimagemobile {
+        margin-left: 10px;
+        padding-top: 12px;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .box h1 {
+        font-size: 10px;
+        text-shadow: 2px 2px rgb(42, 42, 113);
+    }
+    
+    .box h3 {
+        font-size: 8px;
+        text-shadow: 1px 1px rgb(42, 42, 113);
+        padding: 2px;
+    }
+
+    .boxheader {
+        padding: 25px;
+    }
+
+    .tfsimg {
+        padding: 3px;
+    }
+
+
+    .quote {
+        font-size: 12px
+    }
+
+    .tfsvid {
+        height: 12em;
+    }
+
+    .abouttfs img {
+        width: 100px;
+    }
+
+    .month {
+        font-size: 30px;
+    }
+
+    .pointsbutton {
+        text-decoration: none;
+        margin: 10px;
+        padding: 5px;
+        text-shadow: 1px 1px rgb(42, 42, 113);
+    }
+
+    .pointsdiv {
+        width: 100px;
+        font-size: 6px;
+    }
+
+    .pointsinfocolumns {
+       text-align: center;
+    }
+    .pointvalues h2 {
+        margin-left: 35px;
+    }
+
+    .letteringrequirements h2 {
+        margin-right: 35px;
+        margin-top: 30px;
+    }
+
+    .letteringrequirements ul {
+        line-height: 20px;
+        list-style: none;
+        width: 210px;
+    }
+
+
+    .pointvalues ul {
+        line-height: 20px;
+        list-style: none;
+        text-align: center;
+    }
+
+    .footer {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .footericons {
+        justify-content: center;
+        padding: 0;
+    }
+
+}
+
+@media only screen and (min-width:700px) {
+
+
+    .box p {
+        font-size: 20px;
+    }
+    
+    .navigationbar {
+        overflow: visible;
+        background-color: rgb(42, 42, 113);
+        top: 0;
+        width: 100%;
+        align-items: center;
+        padding-inline-start: 8%;
+        padding-inline-end: 8%;
+        display:flex;
+        
+    }
+
+    .navimagemobile {
+        display: none;
+    }
+    .navigationbar a {
+        padding: 10px 10px;
+    }
+
+    .menu {
+        padding-right: 0;
+    }
+
+    .menuoption {
+        padding-top: 10px;
+    }
+
+    .menu {
+        width: 650px;
+        margin-left: 1%;
+    }
+
+    .main {
+        font-family:montserrat;
+        margin-top: 1%;
+    } 
+
+    .title {
+        color:rgb(240, 248, 255); 
+        text-align: justify;
+    }
+
+    .subtext {
+        font-weight: normal;
+        font-size: smaller;
+    }
+
+    /* the next section is css for index.html */
+
+    .indexheader {
+        font-size: 250%; 
+        text-shadow: 4px 4px rgb(42, 42, 113);
+    }
+
+    #slider a img{
+        padding: 10px;
+        width: 800px;
+        height:600px;
+        padding-right: 50px;
+    }
+
+    .boxheader {
+        padding-right: 50px;
+    }
+    .box h1 {
+        text-shadow: 4px 4px rgb(42, 42, 113);
+    }
+    
+    .box h3 {
+        text-shadow: 2px 2px rgb(42, 42, 113);
+        padding: 20px;
+    }
+    
+    .pointsbutton {
+        color: aliceblue;
+        font-family: montserrat;
+        padding: 10%;
+        padding-left: 20%;
+        padding-right: 20%;
+        background-color: black;
+        font-size: 95%;
+        border: 1px solid black;
+        font-weight: normal;
+    }
+
+    .pointsdiv :hover {
+        color: black;
+        background-color: white;
+    }
+
+    .tfsimg {
+        width: 800px;
+        height:400px;
+        padding: 5px;
+    }
+
+    /*about.html*/
+
+    .officers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .officerpic {
+        width: 500px
+    }
+
+    .tfsvid {
+        height: 30em;
+    }
+
+    .abouttfs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abouttfs img {
+        margin-left: 150px;
+    }
+
+    td {
+        padding: 15px;
+        text-align: center;
+        font-size: larger;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    th {
+        padding: 15px;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .month {
+        font-size: xxx-large;
+    }
+
+    .tableex1 {
+        padding-left: 150px; padding-right: 100px;
+    }
+
+    .tableex2 {
+        padding-left: 100px; padding-right: 50px;
+    }
+
+    .tableex3 {
+        padding-left: 50px; padding-right: 50px;
+    }
+
+    .tableex4 {
+        padding-left: 50px; padding-right: 70px
+    }
+
+    .tableex5 {
+        padding-left: 50px; padding-right: 50px
+    }
+
+    .pointsinfocolumns {
+        display: flex;
+        align-items:first baseline;
+        overflow: auto;
+    }
+
+    .letteringrequirements ul {
+        line-height: 240%;
+    }
+
+    .pointvalues ul {
+        line-height: 200%;
+    }
+
+}
+
